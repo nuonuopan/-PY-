@@ -1,0 +1,30 @@
+{
+    "sourceFile": "test.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1653991065718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1653991606256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,7 @@\n import numpy as np\r\n import matplotlib.pyplot as plt\r\n \r\n-img = np.zeros((200, 400), dtype=np.uint0)\r\n-for i in range(400):\r\n-    img[:, i] = i % 255  # 第i列灰度值为i\r\n-plt.imshow(img, cmap=\"gray\")\r\n-plt.show()  # 少了这句显示不出来奥\r\n+x = np.arange(10)\r\n+x.plot()\r\n+plt.plot()\r\n \r\n"
+                },
+                {
+                    "date": 1653992192282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import numpy as np\r\n import matplotlib.pyplot as plt\r\n \r\n x = np.arange(10)\r\n-plt.plot(x,x)\r\n+plt.plot(x, x)\r\n plt.show()\r\n-import matplotlib\r\n+\"\"\" import matplotlib\r\n\\ No newline at end of file\n matplotlib.use('module://matplotlib_inline.backend_inline')\r\n-print(matplotlib.get_backend())\n+print(matplotlib.get_backend()) \"\"\"\r\n"
+                },
+                {
+                    "date": 1653992360984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import numpy as np\r\n import matplotlib.pyplot as plt\r\n \r\n x = np.arange(10)\r\n-plt.plot(x,x)\r\n+plt.plot(x, x)\r\n plt.show()\r\n-import matplotlib\r\n+\"\"\" import matplotlib\r\n\\ No newline at end of file\n matplotlib.use('module://matplotlib_inline.backend_inline')\r\n-print(matplotlib.get_backend())\n+print(matplotlib.get_backend()) \"\"\"\r\n"
+                }
+            ],
+            "date": 1653991065718,
+            "name": "Commit-0",
+            "content": "import numpy as np\r\nimport matplotlib.pyplot as plt\r\n\r\nimg = np.zeros((200, 400), dtype=np.uint0)\r\nfor i in range(400):\r\n    img[:, i] = i % 255  # 第i列灰度值为i\r\nplt.imshow(img, cmap=\"gray\")\r\nplt.show()  # 少了这句显示不出来奥\r\n\r\n"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Q.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1653992506662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1653992748357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,37 @@\n \r\n+- [x] 在spyder中matplotlib输出位置被修改\r\n+    - [参考](https://blog.csdn.net/a18892061545/article/details/122004704)\r\n \r\n+    - 解决方式：\r\n+    1. 仅解决显示问题\r\n+    输入 `%matplotlib inline `\r\n+    可以看到`print(matplotlib.get_backend())`恢复初始值\r\n+    2. 保存图片输出查看\r\n+        ```\r\n+        fig=plt.figure()\r\n+        fig.add_subplot(111)\r\n+        plt.plot(capital_list,color='r')\r\n+        plt.title('双均线策略的资金曲线')\r\n+        plt.show()\r\n+        fig.savefig(r'C:\\Users\\nuonu\\Desktop\\a.png')\r\n+        ```\r\n+    3. 全局重制\r\n+        ```\r\n+        import matplotlib\r\n+        matplotlib.use('module://matplotlib_inline.backend_inline')\r\n+        ```\r\n \r\n \r\n \r\n \r\n \r\n \r\n \r\n \r\n+\r\n+\r\n ###### 问题\r\n - [ ] 无法在vscode里matplotlib的图像\r\n+    - [x] 但可以输出图片去查看\r\n \r\n \r\n"
+                }
+            ],
+            "date": 1653992506662,
+            "name": "Commit-0",
+            "content": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n###### 问题\r\n- [ ] 无法在vscode里matplotlib的图像\r\n\r\n\r\n"
+        }
+    ]
+}
